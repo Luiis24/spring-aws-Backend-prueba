@@ -1,0 +1,5 @@
+package com.franchises.demo_franchises.entity;
+
+public class Franchise {
+
+}

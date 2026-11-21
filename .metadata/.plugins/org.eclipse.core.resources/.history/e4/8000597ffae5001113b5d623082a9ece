@@ -1,0 +1,15 @@
+package com.franchises.demo_franchises.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.franchises.demo_franchises.service.FranchiseService;
+
+@RestController
+@RequestMapping("/franchise")
+public class FranchiseController {
+	
+	@Autowired
+	private FranchiseService franchiseService;
+}

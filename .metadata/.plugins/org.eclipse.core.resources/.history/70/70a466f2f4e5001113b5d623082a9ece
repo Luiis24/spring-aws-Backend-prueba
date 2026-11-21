@@ -1,0 +1,12 @@
+package com.franchises.demo_franchises.entity;
+
+import java.io.Serializable;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="sucursales")
+public class franchise implements Serializable {
+
+}

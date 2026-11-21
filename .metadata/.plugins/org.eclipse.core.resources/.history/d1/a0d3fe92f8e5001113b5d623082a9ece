@@ -1,0 +1,8 @@
+package com.franchises.demo_franchises.service;
+
+import java.awt.List;
+
+public interface FranchiseService {
+
+	public List <Franchise> findAll();
+}

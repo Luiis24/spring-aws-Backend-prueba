@@ -1,0 +1,11 @@
+package com.franchises.demo_franchises.dao;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.franchises.demo_franchises.entity.Franchise;
+
+@Repository
+public interface FranchiseDao extends JpaRepository<Franchise, Long>{
+
+}

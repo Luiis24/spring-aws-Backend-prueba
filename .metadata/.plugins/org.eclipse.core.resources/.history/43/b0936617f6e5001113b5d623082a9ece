@@ -1,0 +1,5 @@
+package com.franchises.demo_franchises.dao;
+
+public class FranchiseDao {
+
+}

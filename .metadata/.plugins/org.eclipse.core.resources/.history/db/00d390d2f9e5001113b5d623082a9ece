@@ -1,0 +1,40 @@
+package com.franchises.demo_franchises.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.franchises.demo_franchises.dao.FranchiseDao;
+import com.franchises.demo_franchises.entity.Franchise;
+
+@Service
+public class FranchiseServiceImpl implements FranchiseService {
+
+	private final FranchiseDao franchiseDao;
+
+	FranchiseServiceImpl(FranchiseDao franchiseDao) {
+		this.franchiseDao = franchiseDao;
+	}
+	
+	@Override
+	public List<Franchise> findAll() {
+		return (List<Franchise>) franchiseDao.findAll();
+	}
+
+	@Override
+	public Franchise save(Franchise franchise) {
+		return franchiseDao.save(franchise);
+	}
+
+	@Override
+	public Franchise findById(Long id) {
+		return franchiseDao.findById(id).orElse(null);
+	}
+
+	@Override
+	public void delete(Franchise franchise) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,44 @@
+package com.franchises.demo_franchises.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.franchises.demo_franchises.dao.ProductsDao;
+import com.franchises.demo_franchises.entity.Products;
+
+import jakarta.transaction.Transactional;
+
+@Service
+public class ProductsServiceImpl implements ProductsService {
+	
+	private final ProductsDao productsDao;
+	
+	ProductsServiceImpl(ProductsDao productsDao){
+		this.productsDao = productsDao;
+	}
+
+	@Override
+	@Transactional
+	public List<Products> findAll() {
+		return (List<Products>) productsDao.findAll();
+	}
+
+	@Override
+	@Transactional
+	public Products save(Products products) {
+		return productsDao.save(products);
+	}
+
+	@Override
+	@Transactional
+	public Products findById(Long id) {
+		return productsDao.findById(id).orElse(null);
+	}
+
+	@Override
+	public void delete(Products products) {
+		productsDao.delete(products);
+	}
+
+}

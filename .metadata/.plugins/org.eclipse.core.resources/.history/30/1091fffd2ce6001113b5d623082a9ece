@@ -1,0 +1,5 @@
+package com.franchises.demo_franchises.service;
+
+public class BranchProductsServiceImpl implements BranchProductsService {
+
+}

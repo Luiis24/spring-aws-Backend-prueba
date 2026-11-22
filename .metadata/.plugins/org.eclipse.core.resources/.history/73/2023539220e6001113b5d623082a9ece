@@ -1,0 +1,41 @@
+package com.franchises.demo_franchises.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.franchises.demo_franchises.dao.BranchesDao;
+import com.franchises.demo_franchises.entity.Branches;
+
+@Service
+public class BranchesServiceImpl implements BranchesService {
+
+	private final BranchesDao branchesDao;
+	
+	BranchesServiceImpl(BranchesDao branchesDao) {
+		this.branchesDao = branchesDao;
+	}
+	
+	@Override
+	public List<Branches> findAll() {
+		return (List<Branches>) branchesDao.findAll();
+	}
+
+	@Override
+	public Branches save(Branches branches) {
+		return branchesDao.save(branches);
+	}
+
+	@Override
+	public Branches findById(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void delete(Branches branches) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

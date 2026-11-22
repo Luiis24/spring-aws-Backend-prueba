@@ -1,0 +1,19 @@
+package com.franchises.demo_franchises.controller;
+
+import com.franchises.demo_franchises.dao.BranchProductsDao;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.franchises.demo_franchises.service.BranchProductsService;
+
+@RestController
+@RequestMapping("/branch-products")
+public class BranchProductsController {
+
+	private final BranchProductsService branchProductsService;
+	
+	BranchProductsController(BranchProductsService branchProductsService) {
+		this.branchProductsService = branchProductsService;
+	}
+	
+}

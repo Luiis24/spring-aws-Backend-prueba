@@ -1,0 +1,29 @@
+package com.franchises.demo_franchises.entity;
+
+import java.io.Serializable;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+import jakarta.validation.constraints.NotBlank;
+
+@Entity
+@Table(name = "sucursal_productos")
+public class BranchProducts implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+	
+	@NotBlank
+	@Column(name = "sucursal_id")
+	private Long idBranch;
+	
+	@NotBlank
+	@Column(name = "producto_id")
+	private Long idProduct;
+	
+	@NotBlank
+	@Column(name = "stock")
+	private Integer stock;
+
+
+}

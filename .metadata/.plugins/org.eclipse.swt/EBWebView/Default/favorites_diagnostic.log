@@ -69,3 +69,31 @@
 2026-11-21 23:00:26.205: [INFO] BookmarkModelLoaded, ids_reassigned: 0
 2026-11-21 23:00:26.205: [INFO] BookmarksLoadDropped droppedNodes=0
 2026-11-21 23:00:26.205: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-21 23:15:20.114: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-22 00:39:18.669: [INFO] CurrentProfilePath: C:\Users\nando\OneDrive\Escritorio\Todo\Desarrollo\Pruebas\Accenture\Prueba Backend\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-11-22 00:39:18.669: [INFO] Profiles total count: 1
+2026-11-22 00:39:18.669: [INFO] Profile: name=Perfil 1 path=C:\Users\nando\OneDrive\Escritorio\Todo\Desarrollo\Pruebas\Accenture\Prueba Backend\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=null
+2026-11-22 00:39:18.669: [INFO] LastUsedProfileDir: C:\Users\nando\OneDrive\Escritorio\Todo\Desarrollo\Pruebas\Accenture\Prueba Backend\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-11-22 00:39:18.669: [INFO] OnDoneLoading sync enabled: 0
+2026-11-22 00:39:18.669: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-11-22 00:39:18.669: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-11-22 00:39:18.669: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-22 00:40:00.283: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-22 00:40:00.337: [INFO] CurrentProfilePath: C:\Users\nando\OneDrive\Escritorio\Todo\Desarrollo\Pruebas\Accenture\Prueba Backend\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-11-22 00:40:00.337: [INFO] Profiles total count: 1
+2026-11-22 00:40:00.337: [INFO] Profile: name=Perfil 1 path=C:\Users\nando\OneDrive\Escritorio\Todo\Desarrollo\Pruebas\Accenture\Prueba Backend\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=null
+2026-11-22 00:40:00.337: [INFO] LastUsedProfileDir: C:\Users\nando\OneDrive\Escritorio\Todo\Desarrollo\Pruebas\Accenture\Prueba Backend\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-11-22 00:40:00.337: [INFO] OnDoneLoading sync enabled: 0
+2026-11-22 00:40:00.337: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-11-22 00:40:00.337: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-11-22 00:40:00.337: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-22 00:43:41.589: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-22 00:43:41.640: [INFO] CurrentProfilePath: C:\Users\nando\OneDrive\Escritorio\Todo\Desarrollo\Pruebas\Accenture\Prueba Backend\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-11-22 00:43:41.640: [INFO] Profiles total count: 1
+2026-11-22 00:43:41.640: [INFO] Profile: name=Perfil 1 path=C:\Users\nando\OneDrive\Escritorio\Todo\Desarrollo\Pruebas\Accenture\Prueba Backend\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=null
+2026-11-22 00:43:41.640: [INFO] LastUsedProfileDir: C:\Users\nando\OneDrive\Escritorio\Todo\Desarrollo\Pruebas\Accenture\Prueba Backend\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-11-22 00:43:41.640: [INFO] OnDoneLoading sync enabled: 0
+2026-11-22 00:43:41.640: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-11-22 00:43:41.640: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-11-22 00:43:41.640: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-22 06:48:40.044: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1

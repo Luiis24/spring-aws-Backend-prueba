@@ -1,0 +1,38 @@
+package com.franchises.demo_franchises.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.franchises.demo_franchises.dao.BranchProductsDao;
+import com.franchises.demo_franchises.entity.BranchProducts;
+
+@Service
+public class BranchProductsServiceImpl implements BranchProductsService {
+
+	private final BranchProductsDao branchProductsDao;
+	
+	BranchProductsServiceImpl(BranchProductsDao branchProductsDao) {
+		this.branchProductsDao = branchProductsDao;
+	}
+
+	@Override
+	public List<BranchProducts> findAll() {
+		return (List<BranchProducts>) branchProductsDao.findAll();
+	}
+
+	@Override
+	public BranchProducts save(BranchProducts branchProducts) {
+		return branchProductsDao.save(branchProducts);
+	}
+
+	@Override
+	public BranchProducts findById(Long id) {
+		return branchProductsDao.findById(id).orElse(null);
+	}
+
+	@Override
+	public void delete(BranchProducts branchProducts) {
+		branchProductsDao.delete(branchProducts);
+	}
+}

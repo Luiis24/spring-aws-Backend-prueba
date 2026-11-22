@@ -1,0 +1,13 @@
+package com.franchises.demo_franchises.service;
+
+import java.util.List;
+
+import com.franchises.demo_franchises.entity.Branches;
+
+public interface BranchesService {
+
+	public List<Branches> findAll();
+	public Franchise save(Franchise franchise);
+	public Franchise findById(Long id);
+	public void delete (Franchise franchise);
+}

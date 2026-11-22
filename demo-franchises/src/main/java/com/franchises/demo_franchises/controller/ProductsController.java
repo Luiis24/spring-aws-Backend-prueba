@@ -1,0 +1,99 @@
+package com.franchises.demo_franchises.controller;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.franchises.demo_franchises.entity.Products;
+import com.franchises.demo_franchises.service.ProductsService;
+
+@RestController
+@RequestMapping("/products")
+public class ProductsController {
+
+	private final ProductsService productService;
+	
+	ProductsController(ProductsService productsService) {
+		this.productService = productsService;
+	}
+	
+	@GetMapping
+	public ResponseEntity<Object> getAll() {
+		Map<String, Object> map = new HashMap<String, Object>();
+		try {
+			List<Products> list = productService.findAll();
+			return new ResponseEntity<Object>(list, HttpStatus.OK);
+		} catch (Exception e) {
+			map.put("message", e.getMessage());
+			return new ResponseEntity<>(map, HttpStatus.INTERNAL_SERVER_ERROR);
+		}
+	}
+
+	@GetMapping(value = "/{id}")
+	public ResponseEntity<Object> getById(@PathVariable Long id) {
+		try {
+			Products data = productService.findById(id);
+			return new ResponseEntity<Object>(data, HttpStatus.OK);
+		} catch (Exception e) {
+			Map<String, Object> map = new HashMap<String, Object>();
+			map.put("message", e.getMessage());
+			return new ResponseEntity<>(map, HttpStatus.INTERNAL_SERVER_ERROR);
+		}
+	}
+
+	@PostMapping
+	public ResponseEntity<Object> save(@RequestBody Products products) {
+		Map<String, Object> map = new HashMap<>();
+		try {
+			Products data = productService.save(products);
+			return new ResponseEntity<Object>(data, HttpStatus.CREATED);
+		} catch (Exception e) {
+			map.put("message", e.getMessage());
+			return new ResponseEntity<>(map, HttpStatus.INTERNAL_SERVER_ERROR);
+		}
+	}
+
+	@PutMapping("/{id}")
+	public ResponseEntity<Object> update(@PathVariable Long id, @RequestBody Products products) {
+		Map<String, Object> map = new HashMap<>();
+		try {
+			Products existing = productService.findById(id);
+			if (existing == null) {
+				map.put("message", "Franchise not found");
+				return new ResponseEntity<>(map, HttpStatus.NOT_FOUND);
+			}
+			products.setId(id);
+			Products updated = productService.save(products);
+			return new ResponseEntity<>(updated, HttpStatus.OK);
+		} catch (Exception e) {
+			map.put("message", e.getMessage());
+			return new ResponseEntity<>(map, HttpStatus.INTERNAL_SERVER_ERROR);
+		}
+	}
+
+	@DeleteMapping(value = "/{id}")
+	public ResponseEntity<Object> delete(@PathVariable Long id) {
+		Map<String, Object> map = new HashMap<>();
+		try {
+			Products data = productService.findById(id);
+			productService.delete(data);
+			map.put("message", "Product deleted successfully");
+			return new ResponseEntity<>(map, HttpStatus.OK);
+		} catch (Exception e) {
+			map.put("message", e.getMessage());
+			return new ResponseEntity<>(map, HttpStatus.INTERNAL_SERVER_ERROR);
+		}
+	}
+	
+}

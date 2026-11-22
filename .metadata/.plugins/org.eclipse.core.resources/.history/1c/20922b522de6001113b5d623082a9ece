@@ -1,0 +1,38 @@
+package com.franchises.demo_franchises.service;
+
+import java.util.List;
+
+import com.franchises.demo_franchises.dao.BranchProductsDao;
+import com.franchises.demo_franchises.entity.BranchProducts;
+
+public class BranchProductsServiceImpl implements BranchProductsService {
+
+	private final BranchProductsDao branchProductsDao;
+	
+	public BranchProductsServiceImpl(BranchProductsDao branchProductsDao) {
+		this.branchProductsDao = branchProductsDao;
+	}
+
+	@Override
+	public List<BranchProducts> findAll() {
+		return (List<BranchProducts>) branchProductsDao.findAll();
+	}
+
+	@Override
+	public BranchProducts save(BranchProducts branchProducts) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public BranchProducts findById(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void delete(BranchProducts branchProducts) {
+		// TODO Auto-generated method stub
+		
+	}
+}

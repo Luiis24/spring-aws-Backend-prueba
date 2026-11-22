@@ -1,0 +1,12 @@
+package com.franchises.demo_franchises.service;
+
+import com.franchises.demo_franchises.dao.BranchProductsDao;
+
+public class BranchProductsServiceImpl implements BranchProductsService {
+
+	private final BranchProductsDao branchProductsDao;
+	
+	public BranchProductsServiceImpl(BranchProductsDao branchProductsDao) {
+		this.branchProductsDao = branchProductsDao;
+	}
+}

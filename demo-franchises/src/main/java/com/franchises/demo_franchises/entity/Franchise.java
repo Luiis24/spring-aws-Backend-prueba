@@ -1,7 +1,6 @@
 package com.franchises.demo_franchises.entity;
 
 import java.io.Serializable;
-import java.sql.Date;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -42,15 +41,4 @@ public class Franchise implements Serializable {
 		this.name = name;
 	}
 
-	public Date getCreatedIn() {
-		return createdIn;
-	}
-
-	public void setCreatedIn(Date createdIn) {
-		this.createdIn = createdIn;
-	}
-
-	@NotBlank
-	@Column(name = "creado_en")
-	private Date createdIn;
 }

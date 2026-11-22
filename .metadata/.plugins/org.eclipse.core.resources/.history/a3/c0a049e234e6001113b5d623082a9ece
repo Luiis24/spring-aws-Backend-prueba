@@ -1,0 +1,14 @@
+package com.franchises.demo_franchises.service;
+
+import java.util.List;
+
+import com.franchises.demo_franchises.entity.BranchProducts;
+
+public interface BranchProductsService {
+	
+	public List<BranchProducts> findAll();
+	public BranchProducts save(BranchProducts branchProducts);
+	public BranchProducts findById(Long id);
+	public void delete (BranchProducts branchProducts);
+
+}

@@ -74,7 +74,7 @@ docker build -t demo-franchises .
 ### 3. Iniciar el contenedor
 
 ```powershell
-docker run --rm -p 8080:8080 --env-file .env demo-franchises
+docker run --rm -p 8080:8080 demo-franchises
 ```
 
 La API queda disponible en `http://localhost:8080`. `--rm` elimina el contenedor al detenerlo; la información permanece en MySQL, no en el contenedor.

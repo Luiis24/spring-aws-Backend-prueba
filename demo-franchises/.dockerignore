@@ -1,0 +1,7 @@
+target/
+.git/
+.metadata/
+.mylyn/
+.idea/
+.vscode/
+*.iml
